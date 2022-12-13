@@ -1,8 +1,12 @@
 //1. В одновимірному масиві визначити сумму від'ємних елементів
-const sumOfNegative = (arr) => arr.reduce((a, c) => (a += c < 0 ? c : 0), 0)
-const array1 = [2, -5, -10, 4, -11, 6, -20]
-
-console.log(sumOfNegative(array1))
+const array1 = [12, -5, 2, -6, 7, 0, -1, 15]
+let result1 = 0
+for (let i = 0; i > array1.length; i++) {
+  if (array1[i] < 0) {
+    result1 += array1[i]
+  }
+}
+console.log(result)
 
 //2. В одновимірному масиві визначити суму додатніх елементів
 const array2 = [12, -5, 2, -6, 7, 0, -1, 15]
